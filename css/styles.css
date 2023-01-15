@@ -58,6 +58,11 @@ ul {
   margin: 0 0 11px 25px;
 }
 
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
 h1,
 h3,
 h4 {
@@ -315,8 +320,57 @@ form.search input:focus {
   transition-duration: 0.3s;
   transition-property: background-image;
   text-decoration: none;
-
 }
+
+/* table  */
+
+#downloads table {
+  position: absolute;
+  top: 271px;
+  left: 24px;
+}
+
+#downloads table td {
+  padding: 8px 20px 6px 0;
+  min-width: 145px;
+}
+
+td:nth-child(1) {
+  width: 25%;
+  padding: 5px;
+}
+
+#downloads table a {
+  font-weight: bold;
+}
+
+a.icon.gui {
+  background: transparent url(../images/gui.png) 6px 3px no-repeat;
+  background-size: 18px 24px;
+}
+
+a.icon {
+  display: inline-block;
+  height: 30px;
+  padding-left: 30px;
+  line-height: 36px;
+}
+
+a.icon.older-releases {
+  background: transparent url(../images/box.png) 0 6px no-repeat;
+  background-size: 22px 20px;
+}
+
+a.icon.mac {
+  background: transparent url(../images/apple.png) 5px 4px no-repeat;
+  background-size: 17px 21px;
+}
+
+a.icon.source {
+  background: transparent url(../images/source-code.png) 0 6px no-repeat;
+  background-size: 25px 20px;
+}
+
 
 /* Making the website responsive */
 
