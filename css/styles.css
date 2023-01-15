@@ -69,7 +69,7 @@ h4 {
   margin: 0;
   font-weight: normal;
   color: #4e443c;
-  text-rendering: optimizelegibility;
+  text-rendering: optimizeLegibility;
 }
 
 footer,
@@ -110,7 +110,7 @@ header {
   color: #9a9994;
 }
 
-form.search {
+.search {
   position: absolute;
   top: 10px;
   right: 0;
@@ -125,11 +125,11 @@ form.search {
   box-shadow: inset 0 1px 4px #ddd;
 }
 
-form.search:focus-within {
+.search:focus-within {
   border-color: #007175;
 }
 
-form.search input {
+.search input {
   border-radius: 20px;
   width: 100%;
   height: 20px;
@@ -141,7 +141,7 @@ form.search input {
   border: 0;
 }
 
-form.search input:focus {
+.search input:focus {
   outline: none;
 }
 
@@ -166,7 +166,7 @@ form.search input:focus {
   line-height: 26.4px;
 }
 
-.first-page .inner-container img.illustration {
+.illustration {
   position: absolute;
   right: -30px;
   top: 24px;
@@ -180,7 +180,7 @@ form.search input:focus {
   overflow: visible;
 }
 
-.content #content-navigation {
+#content-navigation {
   float: left;
   width: 618px;
   margin-bottom: 24px;
@@ -191,13 +191,13 @@ form.search input:focus {
   padding-top: 24px;
 }
 
-#content-nav ul li#nav-about,
-#content-nav ul li#nav-documentation {
+#nav-about,
+#nav-documentation {
   margin-bottom: 40px;
 }
 
-#content-nav ul li#nav-about,
-#content-nav ul li#nav-downloads {
+#nav-about,
+#nav-downloads {
   margin-right: 30px;
 }
 
@@ -265,7 +265,7 @@ form.search input:focus {
   position: relative;
 }
 
-#downloads .monitor {
+.monitor {
   position: absolute;
   top: 0;
   right: -12px;
@@ -371,7 +371,6 @@ a.icon.source {
   background-size: 25px 20px;
 }
 
-
 /* Making the website responsive */
 
 @media (max-width: 940px) {
@@ -389,7 +388,7 @@ a.icon.source {
     margin-bottom: 10px;
   }
 
-  form.search {
+  .search {
     transform: translate(-50%);
     left: 50%;
     margin-top: 7px;
@@ -413,12 +412,12 @@ a.icon.source {
     width: unset;
   }
 
-  .first-page .inner-container .illustration-div {
+  .illustration-div {
     display: flex;
     align-items: center;
   }
 
-  .first-page .inner-container img.illustration {
+  .illustration {
     position: unset;
     right: unset;
     top: unset;
@@ -433,30 +432,49 @@ a.icon.source {
     display: flex;
   }
 
-  .content #content-navigation {
+  #content-navigation {
     width: 50%;
   }
 
-  .content #content-navigation #content-nav ul {
+  #content-nav ul {
     padding: 0 1rem 0 0;
   }
 
-  .content #content-navigation #content-nav ul li {
+  #content-nav ul li {
     margin-bottom: 1rem !important;
     margin-right: 0 !important;
   }
 
-  .content #content-navigation #book {
+  #book {
     width: unset;
   }
 
-  .content #downloads {
+  #downloads {
     width: 50%;
   }
 
-  .content #downloads .monitor {
+  .monitor {
     transform: translateX(-50%);
     left: 50%;
+  }
+
+  #downloads table {
+    transform: translateX(-50%);
+    left: 50%;
+  }
+
+  #downloads table tbody,
+  #downloads table tr {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #downloads table td {
+    margin-bottom: 1rem;
+  }
+
+  #downloads table td a {
+    padding-left: 2.3rem;
   }
 }
 
@@ -465,17 +483,17 @@ a.icon.source {
     padding-bottom: 2.5rem;
   }
 
-  header #page-heading {
+  #page-heading {
     font-size: 0.8rem;
     top: 0;
     padding-right: 1rem;
   }
 
-  form.search {
+  .search {
     width: 84%;
   }
 
-  form.search input {
+  .search input {
     padding: 0.3rem 0.1rem;
   }
 
@@ -483,13 +501,13 @@ a.icon.source {
     flex-direction: column-reverse;
   }
 
-  .first-page .illustration-div {
+  .illustration-div {
     display: flex;
     justify-content: center;
     overflow: hidden;
   }
 
-  .first-page .illustration-div .illustration {
+  .illustration {
     width: 80%;
     height: 100%;
   }
@@ -498,30 +516,34 @@ a.icon.source {
     flex-direction: column-reverse;
   }
 
-  .content #content-navigation,
-  .content #downloads {
+  #content-navigation,
+  #downloads {
     width: 100%;
     border-right: none;
   }
 
-  .content #content-navigation #content-nav ul {
+  #content-nav ul {
     padding: 0 1rem;
   }
 
-  .content #content-navigation #book {
+  #book {
     display: flex;
     justify-content: center;
     align-items: center;
   }
 
-  .content #downloads {
+  #downloads {
     border-bottom: 1px solid #d8d7cf;
     margin-bottom: 2rem;
     padding-bottom: 1rem;
   }
 
-  .content #downloads .monitor, .content #downloads table {
+  .monitor,
+  #downloads table {
     position: relative;
   }
+
+  #downloads table {
+    top: 0;
   }
 }
