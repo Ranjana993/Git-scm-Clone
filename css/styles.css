@@ -570,6 +570,12 @@ a.icon.source {
   #downloads table td a {
     padding-left: 2.3rem;
   }
+
+  #companies-projects ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
 }
 
 @media (max-width: 640px) {
