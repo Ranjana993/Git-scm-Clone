@@ -11,22 +11,7 @@ body {
   font-size: 14px;
   line-height: 22px;
   color: #4e443c;
-  background: #f0efe7 url(https://git-scm.com/images/bg/body.jpg);
-}
-
-/* header section */
-
-.head {
-  position: relative;
-  width: 940px;
-  margin: 0 auto;
-  overflow: visible;
-}
-
-header {
-  position: relative;
-  padding-bottom: 26px;
-  margin-top: 14px;
+  background: #f0efe7 url(../images/body.jpg);
 }
 
 a {
@@ -39,6 +24,27 @@ a {
 
 img {
   border: 0;
+}
+
+p {
+  margin: 0 0 11px;
+  font-size: 14px;
+  line-height: 22px;
+}
+
+.inner-container {
+  position: relative;
+  width: 940px;
+  margin: 0 auto;
+  overflow: visible;
+}
+
+/* header section */
+
+header {
+  position: relative;
+  padding-bottom: 26px;
+  margin-top: 14px;
 }
 
 #page-heading {
@@ -59,7 +65,7 @@ form.search {
   z-index: 1000;
   width: 262px;
   padding-left: 32px;
-  background: transparent url(https://git-scm.com/images/icons/search.png) 10px
+  background: transparent url(../images/search.png) 10px
     50% no-repeat;
   background-size: 17px 17px;
   background-color: #fcfcfa !important;
@@ -86,6 +92,33 @@ form.search input {
 
 form.search input:focus {
   outline: none;
+}
+
+/* first page  */
+
+.first-page {
+    height: 295px;
+    margin-top: -20px;
+    margin-bottom: 2em;
+    background: transparent url(../images/isometric-grid.png) top right repeat;
+    background-size: 35px 21px;
+}
+
+.first-page .inner-container {
+    padding-top: 20px;
+}
+
+.first-page .inner-container p {
+  width: 558px;
+  margin-bottom: 1.2em;
+  font-size: 18px;
+  line-height: 26.4px;
+}
+
+.first-page .inner-container img.illustration {
+  position: absolute;
+  right: -30px;
+  top: 24px;
 }
 
 /* Making the website responsive */
