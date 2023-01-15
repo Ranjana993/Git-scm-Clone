@@ -79,7 +79,7 @@ section {
   display: block;
 }
 
-#content-nav ul {
+#content-nav ul, #companies-projects ul {
   margin-left: 0;
   list-style: none;
 }
@@ -370,6 +370,100 @@ a.icon.source {
   background: transparent url(../images/source-code.png) 0 6px no-repeat;
   background-size: 25px 20px;
 }
+
+/* Companies and Projects */
+
+#companies-projects {
+  padding-top: 20px;
+  clear: both;
+  border-top: solid 1px #d8d7cf;
+}
+
+.text-center {
+  text-align: center;
+}
+
+#companies-projects ul li {
+  display: block;
+  float: left;
+  width: 108px;
+  height: 65px;
+  margin: 0 4px 25px 5px;
+}
+
+#companies-projects ul a {
+  display: block;
+  width: 108px;
+  height: 65px;
+  text-indent: -99999px;
+  opacity: 0.85;
+  transition-duration: 0.3s;
+  transition-property: opacity;
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+#companies-projects ul a.google {
+  background: transparent url(../images/google.png) top right no-repeat;
+  background-size: 108px 65px;
+}
+#companies-projects ul a.microsoft {
+  background: transparent url(../images/microsoft.png) top right no-repeat;
+  background-size: 108px 65px;
+}
+#companies-projects ul a.twitter {
+  background: transparent url(../images/twitter.png) top right no-repeat;
+  background-size: 108px 65px;
+}
+#companies-projects ul a.linkedin {
+  background: transparent url(../images/linked-in.png) top right no-repeat;
+  background-size: 108px 65px;
+}
+#companies-projects ul a.netflix {
+  background: transparent url(../images/netflix.png) top right no-repeat;
+  background-size: 108px 65px;
+}
+#companies-projects ul a.perl {
+  background: transparent url(../images/perl.png) top right no-repeat;
+  background-size: 108px 65px;
+}
+#companies-projects ul a.postgresql {
+  background: transparent url(../images/postgresql.png) top right no-repeat;
+  background-size: 108px 65px;
+}
+#companies-projects ul a.android {
+  background: transparent url(../images/android.png) top right no-repeat;
+  background-size: 108px 65px;
+}
+#companies-projects ul a.linux {
+  background: transparent url(../images/linux.png) top right no-repeat;
+  background-size: 108px 65px;
+}
+#companies-projects ul a.rails {
+  background: transparent url(../images/rails.png) top right no-repeat;
+  background-size: 108px 65px;
+}
+#companies-projects ul a.qt {
+  background: transparent url(../images/qt.png) top right no-repeat;
+  background-size: 108px 65px;
+}
+#companies-projects ul a.gnome {
+  background: transparent url(../images/gnome.png) top right no-repeat;
+  background-size: 108px 65px;
+}
+#companies-projects ul a.eclipse {
+  background: transparent url(../images/eclipse.png) top right no-repeat;
+  background-size: 108px 65px;
+}
+#companies-projects ul a.kde {
+  background: transparent url(../images/kde.png) top right no-repeat;
+  background-size: 108px 65px;
+}
+#companies-projects ul a.x {
+  background: transparent url(../images/x.png) top right no-repeat;
+  background-size: 108px 65px;
+}
+
 
 /* Making the website responsive */
 
