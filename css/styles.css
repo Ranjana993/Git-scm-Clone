@@ -124,7 +124,7 @@ form.search input:focus {
 /* Making the website responsive */
 
 @media (max-width: 940px) {
-    .head {
+    .inner-container {
         width: 100%;
     }
 
@@ -142,6 +142,35 @@ form.search input:focus {
         left: 50%;
         margin-top: 7px;
         top: unset;
+    }
+    
+    .first-page {
+      height: unset;
+    }
+
+    .first-page .inner-container {
+      display: flex;
+      margin-top: 1.8rem;
+    }
+
+    .first-page .inner-container div:first-of-type {
+      padding: 1rem;
+    }
+
+    .first-page .inner-container p {
+      width: unset;
+    }
+
+    .first-page .inner-container .illustration-div {
+      display: flex;
+      align-items: center;
+    }
+
+    .first-page .inner-container img.illustration {
+      position: unset;
+      right: unset;
+      top: unset;
+      max-height: 100%;
     }
 }
 
@@ -162,5 +191,9 @@ form.search input:focus {
 
     form.search input {
         padding: 0.3rem 0.1rem;
+    }
+
+    .first-page .inner-container {
+      flex-direction: column-reverse;
     }
 }
