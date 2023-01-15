@@ -42,13 +42,25 @@ h3 {
   font-weight: bold;
 }
 
+h4 {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+h4,
+h5,
+h6 {
+  line-height: 22px;
+}
+
 ul {
   padding: 0;
   margin: 0 0 11px 25px;
 }
 
 h1,
-h3 {
+h3,
+h4 {
   margin: 0;
   font-weight: normal;
   color: #4e443c;
@@ -240,6 +252,72 @@ form.search input:focus {
   margin-top: 16px;
 }
 
+/* Downloads */
+
+#downloads {
+  float: right;
+  width: 313px;
+  position: relative;
+}
+
+#downloads .monitor {
+  position: absolute;
+  top: 0;
+  right: -12px;
+  background: transparent url(../images/monitor-windows.png) top right no-repeat;
+  background-size: 313px 271px;
+  width: 273px;
+  height: 226px;
+  padding-top: 45px;
+  padding-left: 40px;
+  color: #fff;
+  text-shadow: 1px 1px 0 rgb(0 0 0 /20%);
+}
+
+.monitor h4 {
+  font-weight: normal;
+  color: #fff;
+  font-size: 16px;
+}
+
+.monitor span.version {
+  display: block;
+  margin-bottom: 6px;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.monitor a {
+  color: #eee;
+  font-size: 12px;
+  text-decoration: underline;
+}
+
+.monitor span.release-date {
+  font-size: 12px;
+}
+
+.monitor a.button {
+  border-radius: 2px;
+  box-shadow: 0 1px 0 #148a92;
+  display: block;
+  width: 224px;
+  padding: 5px 0;
+  margin-top: 10px;
+  font-size: 16px;
+  color: #fff;
+  text-align: center;
+  background-image: linear-gradient(#1c868c, #186368);
+  border-top: solid 1px #085e64;
+  border-right: solid 1px #1f6367;
+  border-bottom: solid 1px #134143;
+  border-left: solid 1px #1f6367;
+  transition-duration: 0.3s;
+  transition-property: background-image;
+  text-decoration: none;
+
+}
+
 /* Making the website responsive */
 
 @media (max-width: 940px) {
@@ -317,6 +395,15 @@ form.search input:focus {
   .content #content-navigation #book {
     width: unset;
   }
+
+  .content #downloads {
+    width: 50%;
+  }
+
+  .content #downloads .monitor {
+    transform: translateX(-50%);
+    left: 50%;
+  }
 }
 
 @media (max-width: 640px) {
@@ -343,14 +430,14 @@ form.search input:focus {
   }
 
   .first-page .illustration-div {
-display: flex;
-justify-content: center;
-overflow: hidden;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
   }
 
   .first-page .illustration-div .illustration {
-  width: 80%;
-height: 100%;
+    width: 80%;
+    height: 100%;
   }
 
   .content {
@@ -358,7 +445,7 @@ height: 100%;
   }
 
   .content #content-navigation,
-  .content #content-downloads {
+  .content #downloads {
     width: 100%;
     border-right: none;
   }
@@ -371,5 +458,16 @@ height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
+  }
+
+  .content #downloads {
+    border-bottom: 1px solid #d8d7cf;
+    margin-bottom: 2rem;
+    padding-bottom: 1rem;
+  }
+
+  .content #downloads .monitor, .content #downloads table {
+    position: relative;
+  }
   }
 }
