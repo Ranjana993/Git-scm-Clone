@@ -14,6 +14,8 @@ body {
   background: #f0efe7 url(https://git-scm.com/images/bg/body.jpg);
 }
 
+/* header section */
+
 .head {
   position: relative;
   width: 940px;
@@ -84,4 +86,48 @@ form.search input {
 
 form.search input:focus {
   outline: none;
+}
+
+/* Making the website responsive */
+
+@media (max-width: 940px) {
+    .head {
+        width: 100%;
+    }
+
+    header {
+        padding-bottom: 2rem;
+    }
+
+    header a, header span {
+        padding-left: 1rem;
+        margin-bottom: 10px;
+    }
+
+    form.search {
+        transform: translate(-50%);
+        left: 50%;
+        margin-top: 7px;
+        top: unset;
+    }
+}
+
+@media (max-width: 640px) {
+    header {
+        padding-bottom: 2.5rem;
+    }
+
+    header #page-heading {
+        font-size: 0.8rem;
+        top: 0;
+        padding-right: 1rem;
+    }
+
+    form.search {
+        width: 84%;
+    }
+
+    form.search input {
+        padding: 0.3rem 0.1rem;
+    }
 }
