@@ -313,6 +313,10 @@ form.search input:focus {
     margin-bottom: 1rem !important;
     margin-right: 0 !important;
   }
+
+  .content #content-navigation #book {
+    width: unset;
+  }
 }
 
 @media (max-width: 640px) {
@@ -338,6 +342,17 @@ form.search input:focus {
     flex-direction: column-reverse;
   }
 
+  .first-page .illustration-div {
+display: flex;
+justify-content: center;
+overflow: hidden;
+  }
+
+  .first-page .illustration-div .illustration {
+  width: 80%;
+height: 100%;
+  }
+
   .content {
     flex-direction: column-reverse;
   }
@@ -350,5 +365,11 @@ form.search input:focus {
 
   .content #content-navigation #content-nav ul {
     padding: 0 1rem;
+  }
+
+  .content #content-navigation #book {
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 }
