@@ -79,7 +79,8 @@ section {
   display: block;
 }
 
-#content-nav ul, #companies-projects ul {
+#content-nav ul,
+#companies-projects ul {
   margin-left: 0;
   list-style: none;
 }
@@ -464,6 +465,33 @@ a.icon.source {
   background-size: 108px 65px;
 }
 
+/* footer */
+
+footer {
+  padding: 20px 0 40px;
+  margin-top: 35px;
+  clear: both;
+  font-size: 12px;
+  line-height: 15.4px;
+  color: #9a9994;
+  border-top: solid 1px #d8d7cf;
+}
+
+footer .site-source {
+  float: left;
+  padding-left: 46px;
+  background: transparent url(../images/code.png) 0 2px no-repeat;
+  background-size: 38px 23px;
+}
+
+footer a {
+  color: #403f3c;
+}
+
+footer .sfc-member {
+  float: right;
+  text-align: right;
+}
 
 /* Making the website responsive */
 
@@ -576,6 +604,11 @@ a.icon.source {
     flex-wrap: wrap;
     justify-content: center;
   }
+
+  footer {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
 }
 
 @media (max-width: 640px) {
@@ -646,4 +679,15 @@ a.icon.source {
   #downloads table {
     top: 0;
   }
+
+  footer {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  footer .site-source {
+    margin-bottom: 1rem;
+}
 }
