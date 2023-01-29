@@ -6,6 +6,10 @@ A repository to make clone of git's official website.
 
 In this project I have used HTML and vanilla CSS to create a clone of home page of git-scm's website's home page.
 
+## Deployment
+
+The website has been deployed on the link [`https://git-scm-clone.vercel.app/`](https://git-scm-clone.vercel.app/)
+
 ## Contribution
 
 - Read [`Contributing.md`](https://github.com/MSB-s-Projects/Git-scm-Clone/blob/main/CONTRIBUTING.md)
