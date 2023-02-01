@@ -10,7 +10,7 @@ body {
 
   padding: 0;
   margin: 0;
-  font-size: 14px;
+  font-size: 12px;
   line-height: 22px;
   color: #4e443c;
   background: #f0efe7 url(../images/body.jpg);
@@ -89,9 +89,19 @@ section {
 
 .inner-container {
   position: relative;
-  width: 940px;
+  width: 999px;
   margin: 0 auto;
   overflow: visible;
+}
+
+.inner-container>.inner_content {
+  width: auto;
+  /* font-size: 14px !important; */
+}
+
+#inner_content {
+  width: 39vw;
+  font-size: 16px;
 }
 
 /* header section */
@@ -151,8 +161,9 @@ header {
 /* first page  */
 
 .first-page {
-  height: 295px;
+  height: 297px;
   margin-top: -20px;
+  padding: 9px;
   margin-bottom: 2em;
   background: transparent url(../images/isometric-grid.png) top right repeat;
   background-size: 35px 21px;
@@ -163,10 +174,11 @@ header {
 }
 
 .first-page .inner-container p {
-  width: 558px;
+  width: 550px;
   margin-bottom: 1.2em;
-  font-size: 18px;
-  line-height: 26.4px;
+  font-size: 17px;
+  font-weight: 500;
+  line-height: 26.2px;
 }
 
 .illustration {
@@ -197,11 +209,13 @@ header {
 #nav-about,
 #nav-documentation {
   margin-bottom: 40px;
+  /* margin-left: 12px; */
 }
 
 #nav-about,
 #nav-downloads {
   margin-right: 30px;
+  /* margin-left: 12px; */
 }
 
 #content-nav ul li {
@@ -238,7 +252,7 @@ header {
 }
 
 #content-nav a p {
-  font-size: 13px;
+  font-size: 12px;
   line-height: 17.6px;
 }
 
@@ -413,58 +427,72 @@ a.icon.source {
   background: transparent url(../images/google.png) top right no-repeat;
   background-size: 108px 65px;
 }
+
 #companies-projects ul a.microsoft {
   background: transparent url(../images/microsoft.png) top right no-repeat;
   background-size: 108px 65px;
 }
+
 #companies-projects ul a.twitter {
   background: transparent url(../images/twitter.png) top right no-repeat;
   background-size: 108px 65px;
 }
+
 #companies-projects ul a.linkedin {
   background: transparent url(../images/linked-in.png) top right no-repeat;
   background-size: 108px 65px;
 }
+
 #companies-projects ul a.netflix {
   background: transparent url(../images/netflix.png) top right no-repeat;
   background-size: 108px 65px;
 }
+
 #companies-projects ul a.perl {
   background: transparent url(../images/perl.png) top right no-repeat;
   background-size: 108px 65px;
 }
+
 #companies-projects ul a.postgresql {
   background: transparent url(../images/postgresql.png) top right no-repeat;
   background-size: 108px 65px;
 }
+
 #companies-projects ul a.android {
   background: transparent url(../images/android.png) top right no-repeat;
   background-size: 108px 65px;
 }
+
 #companies-projects ul a.linux {
   background: transparent url(../images/linux.png) top right no-repeat;
   background-size: 108px 65px;
 }
+
 #companies-projects ul a.rails {
   background: transparent url(../images/rails.png) top right no-repeat;
   background-size: 108px 65px;
 }
+
 #companies-projects ul a.qt {
   background: transparent url(../images/qt.png) top right no-repeat;
   background-size: 108px 65px;
 }
+
 #companies-projects ul a.gnome {
   background: transparent url(../images/gnome.png) top right no-repeat;
   background-size: 108px 65px;
 }
+
 #companies-projects ul a.eclipse {
   background: transparent url(../images/eclipse.png) top right no-repeat;
   background-size: 108px 65px;
 }
+
 #companies-projects ul a.kde {
   background: transparent url(../images/kde.png) top right no-repeat;
   background-size: 108px 65px;
 }
+
 #companies-projects ul a.x {
   background: transparent url(../images/x.png) top right no-repeat;
   background-size: 108px 65px;
@@ -525,6 +553,7 @@ footer .sfc-member {
   .first-page {
     height: unset;
   }
+
 
   .first-page .inner-container {
     display: flex;
